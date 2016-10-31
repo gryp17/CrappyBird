@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Crappy Bird</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <div id="container" class="center">
+            <canvas id="background-canvas" class="center" width="1000" height="580">
+                Your browser does not support HTML5 Canvas.
+            </canvas>
+            <canvas id="obstacles-canvas" class="center" width="1000" height="580">
+            </canvas>
+            <canvas id="bird-canvas" class="center" width="1000" height="580">
+            </canvas>
+            <div id="score"></div>
+            <div id="gameover-panel" class="center">
+                <div id="title">Game Over!</div><br>
+                <img id="close" src="img/x.png"/>
+                <form name="add-score-form" id="add-score-form" method="POST" action="">
+                    <input type="text" maxlength="30" size="15" name="username" id="username" placeholder="Username"> <span id="user-score"></span> points
+                    <input type="hidden" id="hidden-score" name="score" value="">
+                    <br><br>
+                    <input type="button" id="add-score" value="Submit score">
+                </form>
+                <div id="scores-list">
+                    <table id="scores">
+
+                    </table>
+                    <br>
+                    <a href="">Try again</a>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="javascript/jquery.js"></script>
+        <script type="text/javascript" src="javascript/background.js"></script>
+        <script type="text/javascript" src="javascript/bird.js"></script>
+        <script type="text/javascript" src="javascript/obstacle.js"></script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+        <script type="text/javascript" src="javascript/auxiliars.js"></script>
+
+    </body>
+</html>

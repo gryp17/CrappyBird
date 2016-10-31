@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    position: relative;
+    width: 1000px;
+    top: 10px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+}
+
+#background-canvas, #obstacles-canvas, #bird-canvas {
+    position: absolute;
+    border: solid 1px;
+    background: transparent;
+}
+
+#gameover-panel, #score{
+    position: absolute;
+    z-index: 1;
+}
+
+#score{
+    left: 15px;
+    top: 10px;
+    color: #990099;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+#gameover-panel{
+    text-align: center;
+    display: none;
+    color: #990099;
+    top: 150px;
+    width: 400px;
+    min-height: 150px;
+    border-radius: 5px;
+    background-color: rgba(120, 120, 120, 0.5);
+}
+
+#gameover-panel #title{
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+#user-score{
+    font-weight: bold;
+}
+
+#scores-list{
+    display: none;
+}
+
+#scores{
+    width: 100%;
+    color: black;
+}
+
+#scores thead tr{
+    font-weight: bold;
+}
+
+#scores td{
+    min-width: 100px;
+}
+
+a, a:visited, a:active{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#close:hover{
+    cursor: pointer;
+}
+
+
+
