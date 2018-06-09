@@ -1,4 +1,4 @@
 # CrappyBird
-html5/canvas game
+Javascript/canvas game that I put together in couple of days.
 
-Currently hosted at: [CrappyBird](http://plamen.comze.com/projects/crappybird/)
+Currently hosted at: [CrappyBird](http://portfolio-plamen.000webhostapp.com/projects/crappybird/)
